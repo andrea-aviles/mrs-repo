@@ -1,6 +1,8 @@
 # Author: Andrea Aviles
 # Purpose: get grayscale values of an image
 # Date: 9/7/2019
+# Version 1.1
+# Added pause to display image size
 
 import sys
 import os
@@ -34,7 +36,7 @@ pix = im.load()
 xcount=im.size[0]
 ycount=im.size[1]
 
-print("This image contains", xcount, "by", ycount, "pixels or", xcount*ycount)
+print("This image is", xcount, "x", ycount, "or", xcount*ycount, "pixels")
 wait = input("Press  <Enter> to continue")
 
 # lets loop to get rgb values
